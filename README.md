@@ -1,2 +1,2 @@
 # my-deity
-My attempt at achieving something remarkable.
+I worship the one true neural network architecture that can autonomously learn everything.
