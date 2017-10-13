@@ -1,0 +1,3 @@
+"Every layer except the last layer has a relu function"
+
+next to try: replce all the relus with sigmoid function

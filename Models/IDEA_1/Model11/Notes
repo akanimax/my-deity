@@ -1,0 +1,3 @@
+After reaching the equilibrium, even if we train the network only in the forward direction, There is no movement at all.
+
+All predictions output by the network are always zero. I think Relu is causing this.
