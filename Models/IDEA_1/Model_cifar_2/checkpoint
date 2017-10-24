@@ -1,0 +1,3 @@
+model_checkpoint_path: "model_cifar_2-255"
+all_model_checkpoint_paths: "model_cifar_2-250"
+all_model_checkpoint_paths: "model_cifar_2-255"
