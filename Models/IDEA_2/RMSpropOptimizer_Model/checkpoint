@@ -1,0 +1,4 @@
+model_checkpoint_path: "RMSpropOptimizer_Model-12"
+all_model_checkpoint_paths: "RMSpropOptimizer_Model-10"
+all_model_checkpoint_paths: "RMSpropOptimizer_Model-11"
+all_model_checkpoint_paths: "RMSpropOptimizer_Model-12"
