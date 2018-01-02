@@ -1,0 +1,4 @@
+model_checkpoint_path: "Adadelta_Model-12"
+all_model_checkpoint_paths: "Adadelta_Model-10"
+all_model_checkpoint_paths: "Adadelta_Model-11"
+all_model_checkpoint_paths: "Adadelta_Model-12"

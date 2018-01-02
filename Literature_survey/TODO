@@ -1,0 +1,15 @@
+Layer normalization paper: 
+https://arxiv.org/abs/1607.06450
+
+using an L2 norm as regularizer
+
+primal dual optimization problems
+
+OPLU paper
+https://arxiv.org/abs/1604.02313
+
+GAN hacks
+https://github.com/soumith/ganhacks
+
+Energy Propagation in Deep Convolutional Neural Networks
+https://arxiv.org/abs/1704.03636
