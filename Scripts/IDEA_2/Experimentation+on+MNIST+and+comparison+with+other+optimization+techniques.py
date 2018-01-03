@@ -195,8 +195,8 @@ layer1 = tf.layers.Dense(
             units = num_hidden_lay_1,
             activation = tf.nn.relu,
             use_bias = True,
-            kernel_initializer = tf.random_uniform_initializer(minval = -0.05, maxval = 0.05, seed = seed_value),
-            bias_initializer = tf.random_uniform_initializer(minval = -0.05, maxval = 0.05, seed = seed_value),
+            kernel_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
+            bias_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
             name = "fully_connected"
          )
 
@@ -204,8 +204,8 @@ layer2 = tf.layers.Dense(
             units = num_hidden_lay_2,
             activation = tf.nn.relu,
             use_bias = True,
-            kernel_initializer = tf.random_uniform_initializer(minval = -0.05, maxval = 0.05, seed = seed_value),
-            bias_initializer = tf.random_uniform_initializer(minval = -0.05, maxval = 0.05, seed = seed_value),
+            kernel_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
+            bias_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
             name = "fully_connected"
          )
 
@@ -213,8 +213,8 @@ layer3 = tf.layers.Dense(
             units = num_hidden_lay_3,
             activation = None, # note that here we apply the softmax nonlinearity for obtaining the probabilities
             use_bias = True,
-            kernel_initializer = tf.random_uniform_initializer(minval = -0.05, maxval = 0.05, seed = seed_value),
-            bias_initializer = tf.random_uniform_initializer(minval = -0.05, maxval = 0.05, seed = seed_value),
+            kernel_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
+            bias_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
             name = "fully_connected"
          )
 
@@ -531,7 +531,7 @@ with tf.name_scope("ranik"):
 with tf.name_scope("Ranik_Trainer"):
     train_step_ranik = update_step
 
-model_name = "RanikOptimizer_Model"
+model_name = "RanikOptimizer_xavier_initialization_Model"
 model_save_path = os.path.join(base_model_path, model_name)
 
 train(train_X, train_Y, training_batch_size, no_of_epochs, train_step_ranik, model_save_path, model_name, debug = True)
