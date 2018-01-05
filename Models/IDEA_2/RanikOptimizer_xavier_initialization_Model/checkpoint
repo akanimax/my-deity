@@ -1,0 +1,4 @@
+model_checkpoint_path: "RanikOptimizer_xavier_initialization_Model-12"
+all_model_checkpoint_paths: "RanikOptimizer_xavier_initialization_Model-10"
+all_model_checkpoint_paths: "RanikOptimizer_xavier_initialization_Model-11"
+all_model_checkpoint_paths: "RanikOptimizer_xavier_initialization_Model-12"
