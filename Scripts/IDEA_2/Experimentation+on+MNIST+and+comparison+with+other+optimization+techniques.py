@@ -193,19 +193,21 @@ tf.reset_default_graph()
 
 layer1 = tf.layers.Dense(
             units = num_hidden_lay_1,
-            activation = tf.nn.relu,
+            activation = tf.nn.selu,
             use_bias = True,
             kernel_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
             bias_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
+            #kernel_constraint = tf.keras.constraints.MaxNorm(max_value=1), # unit norm constraint
             name = "fully_connected"
          )
 
 layer2 = tf.layers.Dense(
             units = num_hidden_lay_2,
-            activation = tf.nn.relu,
+            activation = tf.nn.selu,
             use_bias = True,
             kernel_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
             bias_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
+            #kernel_constraint = tf.keras.constraints.MaxNorm(max_value=1), # unit norm constraint
             name = "fully_connected"
          )
 
@@ -215,6 +217,7 @@ layer3 = tf.layers.Dense(
             use_bias = True,
             kernel_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
             bias_initializer = tf.contrib.layers.xavier_initializer(seed = seed_value),
+            #kernel_constraint = tf.keras.constraints.MaxNorm(max_value=1), # unit norm constraint
             name = "fully_connected"
          )
 
@@ -405,29 +408,29 @@ def train(X, Y, batch_size, no_of_epochs, optimizing_step, model_path, model_nam
 # In[27]:
 
 
-# # define the Adam trainer for the model defined
-# with tf.name_scope("Adam_Trainer"):
-#     train_step_adam = tf.train.AdamOptimizer(learning_rate).minimize(loss)
-#
-#
-# # In[28]:
-#
-#
-# model_name = "Adam_Model"
-# model_save_path = os.path.join(base_model_path, model_name)
-#
-#
-# # In[29]:
-#
-#
-# train(train_X, train_Y, training_batch_size, no_of_epochs, train_step_adam, model_save_path, model_name)
-#
-#
-# # # Train using the Adadelta Optimizer
-#
-# # In[31]:
-#
-#
+# define the Adam trainer for the model defined
+with tf.name_scope("Adam_Trainer"):
+    train_step_adam = tf.train.AdamOptimizer(learning_rate).minimize(loss)
+
+
+# In[28]:
+
+
+model_name = "Adam_Model_with_SeLU"
+model_save_path = os.path.join(base_model_path, model_name)
+
+
+# In[29]:
+
+
+train(train_X, train_Y, training_batch_size, no_of_epochs, train_step_adam, model_save_path, model_name)
+
+
+# # Train using the Adadelta Optimizer
+
+# In[31]:
+
+
 # # define the Adadelta trainer for the model defined
 # with tf.name_scope("Adadelta_Trainer"):
 #     train_step_adadelta = tf.train.AdadeltaOptimizer().minimize(loss) # using the default learning rate
@@ -503,35 +506,35 @@ def train(X, Y, batch_size, no_of_epochs, optimizing_step, model_path, model_nam
 # # In[52]:
 
 
-# The op used for defining the optimizer:
-with tf.name_scope("ranik"):
-    # obtain the gradients of the cost wrt all the three layers' parameters
-    with tf.name_scope("gradients"):
-        gra_lay_1_kernel, gra_lay_1_biases = tf.gradients(loss, [lay_1_kernel, lay_1_biases])
-        gra_lay_2_kernel, gra_lay_2_biases = tf.gradients(loss, [lay_2_kernel, lay_2_biases])
-        gra_lay_3_kernel, gra_lay_3_biases = tf.gradients(loss, [lay_3_kernel, lay_3_biases])
-
-    # define the ops for updating the three layers kernels and biases
-    with tf.name_scope("update"):
-        op1=tf.assign(lay_1_kernel, lay_1_kernel-((loss * gra_lay_1_kernel) / (loss + tf.square(gra_lay_1_kernel))))
-        op2=tf.assign(lay_1_biases, lay_1_biases-((loss * gra_lay_1_biases) / (loss + tf.square(gra_lay_1_biases))))
-        op3=tf.assign(lay_2_kernel, lay_2_kernel-((loss * gra_lay_2_kernel) / (loss + tf.square(gra_lay_2_kernel))))
-        op4=tf.assign(lay_2_biases, lay_2_biases-((loss * gra_lay_2_biases) / (loss + tf.square(gra_lay_2_biases))))
-        op5=tf.assign(lay_3_kernel, lay_3_kernel-((loss * gra_lay_3_kernel) / (loss + tf.square(gra_lay_3_kernel))))
-        op6=tf.assign(lay_3_biases, lay_3_biases-((loss * gra_lay_3_biases) / (loss + tf.square(gra_lay_3_biases))))
-
-        # group all the 6 ops into one
-        update_step = tf.group(op1, op2, op3, op4, op5, op6, name="combined_update")
-
-
-# In[55]:
-
-
-# define the Ranik trainer for the model defined
-with tf.name_scope("Ranik_Trainer"):
-    train_step_ranik = update_step
-
-model_name = "RanikOptimizer_xavier_initialization_Model"
-model_save_path = os.path.join(base_model_path, model_name)
-
-train(train_X, train_Y, training_batch_size, no_of_epochs, train_step_ranik, model_save_path, model_name, debug = True)
+# # The op used for defining the optimizer:
+# with tf.name_scope("ranik"):
+#     # obtain the gradients of the cost wrt all the three layers' parameters
+#     with tf.name_scope("gradients"):
+#         gra_lay_1_kernel, gra_lay_1_biases = tf.gradients(loss, [lay_1_kernel, lay_1_biases])
+#         gra_lay_2_kernel, gra_lay_2_biases = tf.gradients(loss, [lay_2_kernel, lay_2_biases])
+#         gra_lay_3_kernel, gra_lay_3_biases = tf.gradients(loss, [lay_3_kernel, lay_3_biases])
+#
+#     # define the ops for updating the three layers kernels and biases
+#     with tf.name_scope("update"):
+#         op1=tf.assign(lay_1_kernel, lay_1_kernel-((loss * gra_lay_1_kernel) / (loss + tf.square(gra_lay_1_kernel))))
+#         op2=tf.assign(lay_1_biases, lay_1_biases-((loss * gra_lay_1_biases) / (loss + tf.square(gra_lay_1_biases))))
+#         op3=tf.assign(lay_2_kernel, lay_2_kernel-((loss * gra_lay_2_kernel) / (loss + tf.square(gra_lay_2_kernel))))
+#         op4=tf.assign(lay_2_biases, lay_2_biases-((loss * gra_lay_2_biases) / (loss + tf.square(gra_lay_2_biases))))
+#         op5=tf.assign(lay_3_kernel, lay_3_kernel-((loss * gra_lay_3_kernel) / (loss + tf.square(gra_lay_3_kernel))))
+#         op6=tf.assign(lay_3_biases, lay_3_biases-((loss * gra_lay_3_biases) / (loss + tf.square(gra_lay_3_biases))))
+#
+#         # group all the 6 ops into one
+#         update_step = tf.group(op1, op2, op3, op4, op5, op6, name="combined_update")
+#
+#
+# # In[55]:
+#
+#
+# # define the Ranik trainer for the model defined
+# with tf.name_scope("Ranik_Trainer"):
+#     train_step_ranik = update_step
+#
+# model_name = "RanikOptimizer_xavier_initialization_and_selu_activation_Model"
+# model_save_path = os.path.join(base_model_path, model_name)
+#
+# train(train_X, train_Y, training_batch_size, no_of_epochs, train_step_ranik, model_save_path, model_name, debug = True)
