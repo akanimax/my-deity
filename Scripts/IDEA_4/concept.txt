@@ -1,0 +1,6 @@
+This concept is modeling the neural network after a fully additive Maclaurin Series expansion of
+an arbitrary polynomial. This assumes that all the representation functions learnt through
+these computations can be modelled using the polynomials.
+
+Technically, this only uses the polynomial representations and because of which, this may be
+less powerful than the usual non-linear networks.
