@@ -1,6 +1,9 @@
 """
-    The script that creates a three layer_deep network of the proposed architecture in the
-    concept file
+    The script that creates the neural network architecture based on the concept.txt. The script uses command-line arguments
+    for specifying the structure of the network and the hyperparameters for the training. 
+    use ->
+    User:~$ python Additive_Network --help 
+    for the usage information of this module
 """
 from __future__ import print_function
 from __future__ import division # this allows for the division to perform true division directly
