@@ -1,0 +1,3 @@
+model_checkpoint_path: "3-deep-3-wide-256-hdr-21-epochs-30"
+all_model_checkpoint_paths: "3-deep-3-wide-256-hdr-21-epochs-29"
+all_model_checkpoint_paths: "3-deep-3-wide-256-hdr-21-epochs-30"

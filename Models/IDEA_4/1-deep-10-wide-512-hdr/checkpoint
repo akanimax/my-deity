@@ -1,0 +1,3 @@
+model_checkpoint_path: "1-deep-10-wide-512-hdr-21"
+all_model_checkpoint_paths: "1-deep-10-wide-512-hdr-20"
+all_model_checkpoint_paths: "1-deep-10-wide-512-hdr-21"
