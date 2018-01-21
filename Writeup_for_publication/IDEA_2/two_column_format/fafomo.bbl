@@ -1,53 +1,126 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{Abelson \bgroup \em et al.\egroup
-  }{1985}]{abelson-et-al:scheme}
-Harold Abelson, Gerald~Jay Sussman, and Julie Sussman.
-\newblock {\em Structure and Interpretation of Computer Programs}.
-\newblock MIT Press, Cambridge, Massachusetts, 1985.
+\bibitem[\protect\citeauthoryear{Abadi \bgroup \em et al.\egroup
+  }{2016}]{abadi:tensorflow}
+Martín Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen, Craig
+  Citro, Greg~S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay
+  Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard,
+  Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh
+  Levenberg, Dan Mane, Rajat Monga, Sherry Moore, Derek Murray, Chris Olah,
+  Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal Talwar,
+  Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Viegas, Oriol
+  Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and Xiaoqiang
+  Zheng.
+\newblock Tensorflow: Large-scale machine learning on heterogeneous distributed
+  systems.
+\newblock {\em ArXiv e-prints arXiv:1603.04467v2 [cs.DC]}, 2016.
 
-\bibitem[\protect\citeauthoryear{Baumgartner \bgroup \em et al.\egroup
-  }{2001}]{bgf:Lixto}
-Robert Baumgartner, Georg Gottlob, and Sergio Flesca.
-\newblock Visual information extraction with {Lixto}.
-\newblock In {\em Proceedings of the 27th International Conference on Very
-  Large Databases}, pages 119--128, Rome, Italy, September 2001. Morgan
-  Kaufmann.
+\bibitem[\protect\citeauthoryear{Akram and ul Ann}{2015}]{akram:newton-raphson}
+Saba Akram and Qurrat ul~Ann.
+\newblock Newton raphson method.
+\newblock {\em International Journal of Scientific and Engineering Research},
+  6(7):1748 -- 1752, July 2015.
 
-\bibitem[\protect\citeauthoryear{Brachman and
-  Schmolze}{1985}]{brachman-schmolze:kl-one}
-Ronald~J. Brachman and James~G. Schmolze.
-\newblock An overview of the {KL-ONE} knowledge representation system.
-\newblock {\em Cognitive Science}, 9(2):171--216, April--June 1985.
+\bibitem[\protect\citeauthoryear{Anonymous}{2018}]{anonymous:adam-problem}
+Anonymous.
+\newblock On the convergence of adam and beyond.
+\newblock In {\em Under double blind review as a conference paper at ICLR
+  2018}, 2018.
 
-\bibitem[\protect\citeauthoryear{Gottlob \bgroup \em et al.\egroup
-  }{2002}]{gls:hypertrees}
-Georg Gottlob, Nicola Leone, and Francesco Scarcello.
-\newblock Hypertree decompositions and tractable queries.
-\newblock {\em Journal of Computer and System Sciences}, 64(3):579--627, May
-  2002.
+\bibitem[\protect\citeauthoryear{Cauchy}{1847}]{cauchy:gradient-descent}
+Augustin-Louis Cauchy.
+\newblock Methode generale pour la resolution de systemes d'equations
+  simultanees.
+\newblock {\em Compute rendu des seances de l'academie des sciences}, pages 536
+  -- 538, 1847.
 
-\bibitem[\protect\citeauthoryear{Gottlob}{1992}]{gottlob:nonmon}
-Georg Gottlob.
-\newblock Complexity results for nonmonotonic logics.
-\newblock {\em Journal of Logic and Computation}, 2(3):397--425, June 1992.
+\bibitem[\protect\citeauthoryear{Darken \bgroup \em et al.\egroup
+  }{2002}]{darken:schedule}
+Christian Darken, Joseph Chang, and John Moody.
+\newblock Learning rate schedules for faster stochastic gradient search.
+\newblock In {\em Neural Networks for Signal Processing II Proceedings of the
+  1992 IEEE Workshop}, Helsingoer, Denmark, August 2002. IEEE explore.
 
-\bibitem[\protect\citeauthoryear{Levesque}{1984a}]{levesque:functional-foundations}
-Hector~J. Levesque.
-\newblock Foundations of a functional approach to knowledge representation.
-\newblock {\em Artificial Intelligence}, 23(2):155--212, July 1984.
+\bibitem[\protect\citeauthoryear{Einstein}{1914   1917}]{einstein:relativity}
+Albert Einstein.
+\newblock The foundation of the general theory of relativity.
+\newblock {\em THE COLLECTED PAPERS OF Albert Einstein}, 6(30):146 -- 200, 1914
+  - 1917.
 
-\bibitem[\protect\citeauthoryear{Levesque}{1984b}]{levesque:belief}
-Hector~J. Levesque.
-\newblock A logic of implicit and explicit belief.
-\newblock In {\em Proceedings of the Fourth National Conference on Artificial
-  Intelligence}, pages 198--202, Austin, Texas, August 1984. American
-  Association for Artificial Intelligence.
+\bibitem[\protect\citeauthoryear{Glorot and Bengio}{2010}]{glorot:xavier}
+Xavier Glorot and Yoshua Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In {\em Proceedings of the 13th International Conference on
+  Artificial Intelligence and Statistics}, Saradina, Italy, 2010.
 
-\bibitem[\protect\citeauthoryear{Nebel}{2000}]{nebel:jair-2000}
-Bernhard Nebel.
-\newblock On the compilability and expressive power of propositional planning
-  formalisms.
-\newblock {\em Journal of Artificial Intelligence Research}, 12:271--315, 2000.
+\bibitem[\protect\citeauthoryear{Goodfellow \bgroup \em et al.\egroup
+  }{2016}]{goodfellow-et-al:deep-learning}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, Cambridge, Massachusetts, 2016.
+
+\bibitem[\protect\citeauthoryear{Ioffe and
+  Szegedy}{2015}]{ioffe:batch-normalization}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock {\em ArXiv e-prints arXiv:1502.03167v3 [cs.LG]}, 2015.
+
+\bibitem[\protect\citeauthoryear{Kingma and Ba}{2015}]{kingma-ba:adam}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock In {\em Proc. 3rd International Conference for Learning
+  Representations, San Diego}, 2015.
+
+\bibitem[\protect\citeauthoryear{Koolen \bgroup \em et al.\egroup
+  }{2014}]{koolen:learning-learning-rate}
+Wouter~M Koolen, Tim van Erven, and Peter Gr\"{u}nwald.
+\newblock Learning the learning rate for prediction with expert advice.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~D. Lawrence, and K.~Q.
+  Weinberger, editors, {\em Advances in Neural Information Processing Systems
+  27}, pages 2294--2302. Curran Associates, Inc., 2014.
+
+\bibitem[\protect\citeauthoryear{Nair and Hinton}{2010}]{nair:relu}
+Vinod Nair and Geoffrey Hinton.
+\newblock Rectified linear units improve restricted boltzmann machines.
+\newblock In {\em Proceedings of the 27 th International Conference on Machine
+  Learning 2010}, Haifa, Israel, 2010.
+
+\bibitem[\protect\citeauthoryear{Nesterov}{1983}]{nesterov:momentum}
+Y~Nesterov.
+\newblock A method for unconstrained convex minimization problem with the rate
+  of convergence o(1/k2).
+\newblock {\em Doklady ANSSSR (translated as Soviet.Math.Docl.)}, 269:543 --
+  547, 1983.
+
+\bibitem[\protect\citeauthoryear{Qian}{1999}]{qian:momentum}
+Ning Qian.
+\newblock On the momentum term in gradient descent learning algorithms.
+\newblock {\em Neural Networks : The Official Journal of the International
+  Neural Network Society, 12(1), 145–151.}, 1999.
+
+\bibitem[\protect\citeauthoryear{Robbins and Monro}{1951}]{robbins:annealing}
+Herbert Robbins and Sutton Monro.
+\newblock A stochastic approximation method.
+\newblock {\em The Annals of Mathematical Statistics}, 22(3):400 -- 407,
+  September 1951.
+
+\bibitem[\protect\citeauthoryear{Rudder}{2017}]{rudder:overview}
+Sebastian Rudder.
+\newblock An overview of gradient descent optimization algorithms.
+\newblock {\em ArXiv e-prints arXiv:1609.04747 [cs.LG]}, 2017.
+
+\bibitem[\protect\citeauthoryear{Schaul \bgroup \em et al.\egroup
+  }{2013}]{schaul:pesky}
+Tom Schaul, Sixin Zhang, and Yann LeCun.
+\newblock No more pesky learning rates.
+\newblock {\em ArXiv e-prints arXiv:1206.1106v2[stat.ML]}, 2013.
+
+\bibitem[\protect\citeauthoryear{Sutton}{1986}]{sutton:gradient-descent-problems}
+R~S Sutton.
+\newblock Two problems with backpropagation and other steepest-descent learning
+  procedures for networks.
+\newblock In {\em Proc. 8th Annual Conf.} Cognitive Science Society, 1986.
 
 \end{thebibliography}

@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: fafomo.aux
 The style file: named.bst
 Database file #1: fafomo.bib
-You've used 8 entries,
+You've used 18 entries,
             2439 wiz_defined-function locations,
-            604 strings with 5755 characters,
-and the built_in function-call counts, 3274 in all, are:
-= -- 356
-> -- 95
+            656 strings with 8334 characters,
+and the built_in function-call counts, 7628 in all, are:
+= -- 736
+> -- 419
 < -- 2
-+ -- 33
-- -- 30
-* -- 268
-:= -- 518
-add.period$ -- 26
-call.type$ -- 8
-change.case$ -- 46
-chr.to.int$ -- 7
-cite$ -- 8
-duplicate$ -- 137
-empty$ -- 259
-format.name$ -- 39
-if$ -- 684
-int.to.chr$ -- 2
++ -- 151
+- -- 147
+* -- 627
+:= -- 1281
+add.period$ -- 57
+call.type$ -- 18
+change.case$ -- 142
+chr.to.int$ -- 18
+cite$ -- 18
+duplicate$ -- 292
+empty$ -- 521
+format.name$ -- 171
+if$ -- 1543
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 43
-num.names$ -- 24
-pop$ -- 36
+missing$ -- 19
+newline$ -- 93
+num.names$ -- 56
+pop$ -- 145
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 161
 quote$ -- 0
-skip$ -- 107
+skip$ -- 223
 stack$ -- 0
-substring$ -- 231
-swap$ -- 34
+substring$ -- 284
+swap$ -- 61
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
+type$ -- 140
 warning$ -- 0
-while$ -- 32
-width$ -- 12
-write$ -- 110
+while$ -- 46
+width$ -- 22
+write$ -- 231
