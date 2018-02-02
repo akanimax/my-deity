@@ -1,0 +1,131 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abadi et~al.(2016)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia,
+  Jozefowicz, Kaiser, Kudlur, Levenberg, Mane, Monga, Moore, Murray, Olah,
+  Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan,
+  Viegas, Vinyals, Warden, Wattenberg, Wicke, Yu, and Zheng]{abadi:tensorflow}
+Abadi, Martín, Agarwal, Ashish, Barham, Paul, Brevdo, Eugene, Chen, Zhifeng,
+  Citro, Craig, Corrado, Greg~S., Davis, Andy, Dean, Jeffrey, Devin, Matthieu,
+  Ghemawat, Sanjay, Goodfellow, Ian, Harp, Andrew, Irving, Geoffrey, Isard,
+  Michael, Jia, Yangqing, Jozefowicz, Rafal, Kaiser, Lukasz, Kudlur, Manjunath,
+  Levenberg, Josh, Mane, Dan, Monga, Rajat, Moore, Sherry, Murray, Derek, Olah,
+  Chris, Schuster, Mike, Shlens, Jonathon, Steiner, Benoit, Sutskever, Ilya,
+  Talwar, Kunal, Tucker, Paul, Vanhoucke, Vincent, Vasudevan, Vijay, Viegas,
+  Fernanda, Vinyals, Oriol, Warden, Pete, Wattenberg, Martin, Wicke, Martin,
+  Yu, Yuan, and Zheng, Xiaoqiang.
+\newblock Tensorflow: Large-scale machine learning on heterogeneous distributed
+  systems.
+\newblock \emph{ArXiv e-prints arXiv:1603.04467v2 [cs.DC]}, 2016.
+
+\bibitem[Akram \& ul~Ann(2015)Akram and ul~Ann]{akram:newton-raphson}
+Akram, Saba and ul~Ann, Qurrat.
+\newblock Newton raphson method.
+\newblock \emph{International Journal of Scientific and Engineering Research},
+  6\penalty0 (7):\penalty0 1748 -- 1752, July 2015.
+
+\bibitem[Anonymous(2018)]{anonymous:adam-problem}
+Anonymous.
+\newblock On the convergence of adam and beyond.
+\newblock In \emph{Under double blind review as a conference paper at ICLR
+  2018}, 2018.
+
+\bibitem[Cauchy(1847)]{cauchy:gradient-descent}
+Cauchy, Augustin-Louis.
+\newblock Methode generale pour la resolution de systemes d'equations
+  simultanees.
+\newblock \emph{Compute rendu des seances de l'academie des sciences}, pp.\
+  536 -- 538, 1847.
+
+\bibitem[Darken et~al.(2002)Darken, Chang, and Moody]{darken:schedule}
+Darken, Christian, Chang, Joseph, and Moody, John.
+\newblock Learning rate schedules for faster stochastic gradient search.
+\newblock In \emph{Neural Networks for Signal Processing II Proceedings of the
+  1992 IEEE Workshop}, Helsingoer, Denmark, August 2002. IEEE explore.
+
+\bibitem[Einstein(1914 - 1917)]{einstein:relativity}
+Einstein, Albert.
+\newblock The foundation of the general theory of relativity.
+\newblock \emph{THE COLLECTED PAPERS OF Albert Einstein}, 6\penalty0
+  (30):\penalty0 146 -- 200, 1914 - 1917.
+
+\bibitem[Glorot \& Bengio(2010)Glorot and Bengio]{glorot:xavier}
+Glorot, Xavier and Bengio, Yoshua.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In \emph{Proceedings of the 13th International Conference on
+  Artificial Intelligence and Statistics}, Saradina, Italy, 2010.
+
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
+  Courville]{goodfellow-et-al:deep-learning}
+Goodfellow, Ian, Bengio, Yoshua, and Courville, Aaron.
+\newblock \emph{Deep Learning}.
+\newblock MIT Press, Cambridge, Massachusetts, 2016.
+
+\bibitem[Ioffe \& Szegedy(2015)Ioffe and Szegedy]{ioffe:batch-normalization}
+Ioffe, Sergey and Szegedy, Christian.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock \emph{ArXiv e-prints arXiv:1502.03167v3 [cs.LG]}, 2015.
+
+\bibitem[Kingma \& Ba(2015)Kingma and Ba]{kingma-ba:adam}
+Kingma, Diederik~P. and Ba, Jimmy.
+\newblock Adam: A method for stochastic optimization.
+\newblock In \emph{Proc. 3rd International Conference for Learning
+  Representations, San Diego}, 2015.
+
+\bibitem[Koolen et~al.(2014)Koolen, van Erven, and
+  Gr\"{u}nwald]{koolen:learning-learning-rate}
+Koolen, Wouter~M, van Erven, Tim, and Gr\"{u}nwald, Peter.
+\newblock Learning the learning rate for prediction with expert advice.
+\newblock In Ghahramani, Z., Welling, M., Cortes, C., Lawrence, N.~D., and
+  Weinberger, K.~Q. (eds.), \emph{Advances in Neural Information Processing
+  Systems 27}, pp.\  2294--2302. Curran Associates, Inc., 2014.
+
+\bibitem[Nair \& Hinton(2010)Nair and Hinton]{nair:relu}
+Nair, Vinod and Hinton, Geoffrey.
+\newblock Rectified linear units improve restricted boltzmann machines.
+\newblock In \emph{Proceedings of the 27 th International Conference on Machine
+  Learning 2010}, Haifa, Israel, 2010.
+
+\bibitem[Nesterov(1983)]{nesterov:momentum}
+Nesterov, Y.
+\newblock A method for unconstrained convex minimization problem with the rate
+  of convergence o(1/k2).
+\newblock \emph{Doklady ANSSSR (translated as Soviet.Math.Docl.)},
+  269:\penalty0 543 -- 547, 1983.
+
+\bibitem[Qian(1999)]{qian:momentum}
+Qian, Ning.
+\newblock On the momentum term in gradient descent learning algorithms.
+\newblock \emph{Neural Networks : The Official Journal of the International
+  Neural Network Society, 12(1), 145–151.}, 1999.
+
+\bibitem[Robbins \& Monro(1951)Robbins and Monro]{robbins:annealing}
+Robbins, Herbert and Monro, Sutton.
+\newblock A stochastic approximation method.
+\newblock \emph{The Annals of Mathematical Statistics}, 22\penalty0
+  (3):\penalty0 400 -- 407, September 1951.
+
+\bibitem[Rudder(2017)]{rudder:overview}
+Rudder, Sebastian.
+\newblock An overview of gradient descent optimization algorithms.
+\newblock \emph{ArXiv e-prints arXiv:1609.04747 [cs.LG]}, 2017.
+
+\bibitem[Schaul et~al.(2013)Schaul, Zhang, and LeCun]{schaul:pesky}
+Schaul, Tom, Zhang, Sixin, and LeCun, Yann.
+\newblock No more pesky learning rates.
+\newblock \emph{ArXiv e-prints arXiv:1206.1106v2[stat.ML]}, 2013.
+
+\bibitem[Sutton(1986)]{sutton:gradient-descent-problems}
+Sutton, R~S.
+\newblock Two problems with backpropagation and other steepest-descent learning
+  procedures for networks.
+\newblock In \emph{Proc. 8th Annual Conf.} Cognitive Science Society, 1986.
+
+\end{thebibliography}
