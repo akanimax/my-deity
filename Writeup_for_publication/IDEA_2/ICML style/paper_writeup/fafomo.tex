@@ -79,7 +79,7 @@
 \printAffiliationsAndNotice{} % otherwise use the standard text.
 
 \begin{abstract}
-This research paper describes a technique for performing mathematical optimization, which is free from any hyperparameters. The optimization requires only first order derivatives of the objective function with respect to the learning parameters. The step size, more commonly known as the learning rate, which is manually set for training is replaced by a heuristic which calculates an optimal step size relative to the instant value of the objective function. Finally the results obtained on the MNIST dataset by using this technique are presented and discussed in brief while comparing to other optimization algorithms. The algorithm proves its stability on the MNIST classification and achieves performance comparable to Adam optimizer which is the current standard.
+This research paper describes a technique for performing mathematical optimization, which is free from any hyperparameters. The optimization requires only first order derivatives of the objective function with respect to the learning parameters. The step size, more commonly known as the learning rate, which is manually set for training is replaced by a heuristic which calculates an optimal step size relative to the instantaneous value of the objective function. Finally the results obtained on the MNIST dataset by using this technique are presented and discussed in brief while comparing to other optimization algorithms. The algorithm proves its stability on the MNIST classification and achieves performance comparable to Adam optimizer which is the current standard.
 \end{abstract}
 
 \section{Introduction}
@@ -130,7 +130,7 @@ This section provides a step by step description of the proposed algorithm for p
 Following sub-sections would present the update equation of the algorithm and also explain the mathematics supporting it. Followed by, the analysis of the parameter update portion of the equation and primary simulations on common known mathematical functions.
 
 \subsection{Proposed Algorithm}
-The algorithm proposed by the present research has the same procedure as that of gradient descent. Precisely, the algorithm starts by initializing the trainable parameters $x$ randomly \footnote{There are various distinct methods proposed for initialization. The main motive behind the random parameter initialization is breaking the symmetry among them.} in order to make an initial guess and then proceeds iteratively by updating the parameters towards better values \ref{alg:optimization}.
+The algorithm proposed by the present research has the same procedure as that of gradient descent. Precisely, the algorithm starts by initializing the trainable parameters $x$ randomly \footnote{There are various distinct methods proposed for initialization. The main motive behind the random parameter initialization is breaking the symmetry among them.} in order to make an initial guess and then proceeds iteratively by updating the parameters towards better values (Algorithm \ref{alg:optimization}).
 
 \begin{algorithm}[!htb]
    \caption{Proposed Optimization}
@@ -141,7 +141,7 @@ The algorithm proposed by the present research has the same procedure as that of
    \REPEAT
    \STATE \textbf{Forward Pass} $loss = l(f(x_i; W), y_i)$
    \STATE \textbf{Backpropagation} calculate $\cfrac{df(x_i)}{dW}$
-   \STATE \textbf{Update params} $W = RU(loss, \cfrac{df(x_i)}{dW})$
+   \STATE \textbf{Update params} $W = RU(W, loss, \cfrac{df(x_i)}{dW})$
    \UNTIL{$epoch$ $\leq$ $totalEpochs$}
 \end{algorithmic}
 \end{algorithm}
